@@ -15,9 +15,9 @@
     "axios": "^0.18.0",
     "bootstrap": "^4.1.3",
     "popper.js": "^1.14.4",
-    "survey-vue": "^1.0.37",
-    "surveyjs-editor": "^1.0.37",
-    "surveyjs-widgets": "^1.0.37",
+    "survey-vue": "^1.0.38",
+    "surveyjs-editor": "^1.0.38",
+    "surveyjs-widgets": "^1.0.38",
     "vue": "^2.5.17",
     "vue-axios": "^2.1.3"
   },
