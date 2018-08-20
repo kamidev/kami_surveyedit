@@ -3,7 +3,7 @@
     <img src="./assets/logo.png">
     <survey :survey="survey" /> 
     <!-- Uncomment the line below to display survey editor -->
-     <!-- <survey-editor /> 
+     <!-- <survey-editor /> --> 
   </div>
 </template>
 
