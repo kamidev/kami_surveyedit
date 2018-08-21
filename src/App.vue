@@ -1,9 +1,8 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <survey :survey="survey" /> 
-    <!-- Uncomment the line below to display survey editor -->
-     <!-- <survey-editor /> --> 
+    <!-- <img src="./assets/logo.png"> -->
+    <!-- <survey :survey="survey" />  -->
+     <survey-editor /> 
   </div>
 </template>
 
