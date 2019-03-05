@@ -1,0 +1,67 @@
+{
+  "locale": "sv",
+  "title": {
+    "sv": "Frågor till avslutade projekt via enkätverkyget Viablecities Feedback"
+  },
+  "focusFirstQuestionAutomatic": false,
+  "pages": [
+    {
+      "name": "page0",
+      "elements": [
+        {
+          "type": "panel",
+          "name": "panel1",
+          "elements": [
+            {
+              "type": "html",
+              "name": "Intro",
+              "startWithNewLine": false,
+              "html": {
+                "sv": "<article class='intro'>    <h1 class='intro__heading intro__heading--income title'>Introduktion </h1>    <div class='intro__body wysiwyg'>       <p>Nu börjar projekt som fått finansiering av Viable Cities att avslutas och det börjar bli dags att slutrapportera till Energimyndigheten. Detta görs i Energimyndighetens verktyg E-kanalen. Inom programmet Viable Cities gör vi också en kompletterande uppföljning i form av denna enkät.\n</p> <p>\n\nVi kommer även att ta en uppföljande kontakt med varje projekt för att ha en dialog kring vad projektet lett fram till så långt och om steg framåt.Tack för att du fyller i denna uppföljningsenkät!</p>   </div> </article>"
+              }
+            },
+            {
+              "type": "text",
+              "name": "project_id",
+              "title": {
+                "sv": "Ditt projekts diarienummer"
+              },
+              "isRequired": true
+            },
+            {
+              "type": "text",
+              "name": "project_email",
+              "isRequired": true,
+              "placeHolder": {
+                "sv": "Samma som du loggat in med"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "page2",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "question1"
+        }
+      ]
+    }
+  ],
+  "showPageNumbers": true,
+  "showProgressBar": "top",
+  "checkErrorsMode": "onValueChanged",
+  "pagePrevText": {
+    "sv": "Föregående"
+  },
+  "pageNextText": {
+    "sv": "Nästa"
+  },
+  "completeText": {
+    "sv": "Skicka in svaren"
+  },
+  "questionStartIndex": "2",
+  "showTimerPanelMode": "page"
+}

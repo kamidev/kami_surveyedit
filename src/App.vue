@@ -2,7 +2,7 @@
   <div id="app">
     <!-- <img src="./assets/logo.png"> -->
     <!-- <survey :survey="survey" />  -->
-     <survey-editor /> 
+    <survey-editor />
   </div>
 </template>
 
