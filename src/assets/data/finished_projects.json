@@ -94,15 +94,63 @@
       "name": "publishing",
       "elements": [
         {
-          "type": "rating",
-          "name": "publications",
+          "type": "panel",
+          "name": "publications_panel",
+          "elements": [
+            {
+              "type": "radiogroup",
+              "name": "publications",
+              "title": {
+                "sv": "Har projektet lett till publikationer från en eller flera av deltagande partners? Detta kan röra artiklar (vetenskapliga eller av annan typ), rapporter, filmer, bloggposter, podcasts eller liknande\n"
+              },
+              "isRequired": true,
+              "choices": [
+                {
+                  "value": "true",
+                  "text": {
+                    "sv": "Ja"
+                  }
+                },
+                {
+                  "value": "false",
+                  "text": {
+                    "sv": "Nej"
+                  }
+                }
+              ]
+            }
+          ],
           "title": {
             "sv": "Publikationer"
           }
         },
         {
-          "type": "text",
-          "name": "web_and_social_media",
+          "type": "panel",
+          "name": "web_panel",
+          "elements": [
+            {
+              "type": "radiogroup",
+              "name": "question1",
+              "title": {
+                "sv": "Har en webbplats skapats för projektet? Det kan också gälla en webbplats för en större satsning där projektet är en del.\nbloggposter, podcasts eller liknande\n"
+              },
+              "isRequired": true,
+              "choices": [
+                {
+                  "value": "true",
+                  "text": {
+                    "sv": "Ja"
+                  }
+                },
+                {
+                  "value": "false",
+                  "text": {
+                    "sv": "Nej"
+                  }
+                }
+              ]
+            }
+          ],
           "title": {
             "sv": "Webbplats och konton i sociala medier"
           }
@@ -159,6 +207,7 @@
   ],
   "showPageTitles": false,
   "showProgressBar": "top",
+  "storeOthersAsComment": false,
   "checkErrorsMode": "onValueChanged",
   "pagePrevText": {
     "sv": "Föregående"
