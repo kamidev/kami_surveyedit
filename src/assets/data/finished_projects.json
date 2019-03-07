@@ -3,7 +3,6 @@
   "title": {
     "sv": "Test av enkätverktyget ViableCities Feedback"
   },
-  "focusFirstQuestionAutomatic": false,
   "pages": [
     {
       "name": "intro",
@@ -16,7 +15,7 @@
             "sv": "Intro"
           },
           "html": {
-            "sv": "<article><h2>Uppföljning av avslutade projekt</h2> <div class='intro__body wysiwyg'><p>Nu börjar projekt som fått finansiering av Viable Cities att avslutas och det är snart dags att slutrapportera till Energimyndigheten. Detta görs i Energimyndighetens verktyg E-kanalen. Inom programmet Viable Cities gör vi även en kompletterande uppföljning i form av denna enkät.\n</p> <p>\n\nVi kommer också att ta en uppföljande kontakt med varje projekt för att ha en dialog kring vad projektet lett fram till så långt och om steg framåt. Tack för att du fyller i denna uppföljningsenkät!</p></div></article>"
+            "sv": "<article><h2>Uppföljning av avslutade projekt</h2> <div><p>Nu börjar projekt som fått finansiering av Viable Cities att avslutas och det är snart dags att slutrapportera till Energimyndigheten. Detta görs i Energimyndighetens verktyg E-kanalen. Inom ramen för programmet Viable Cities gör vi också en kompletterande uppföljning i form av denna enkät.</p><p> Vi kommer att ta en uppföljande kontakt med varje projekt för att ha en dialog kring vad projektet lett fram till så långt och om steg framåt. Tack för att du fyller i denna uppföljningsenkät!</p></div></article>"
           }
         },
         {
@@ -54,7 +53,7 @@
           "name": "result_description",
           "startWithNewLine": false,
           "html": {
-            "sv": "<div><p><b>Vilka är de viktigaste resultaten från projektet?<b></p></div>\n<i>Viable Cities kommer att publicera en kort sammanfattning av de viktigaste resultaten från respektive projekt. Därför behöver vi en text som beskriver detta på max 1500 tecken inkl blanksteg. </i>\n"
+            "sv": "<div><p><b>Vilka är de viktigaste resultaten från projektet?<b></p></div>\n<i>Viable Cities kommer att publicera en kort sammanfattning av de viktigaste resultaten från respektive projekt. Därför behöver vi en text som beskriver detta.</i>\n"
           }
         },
         {
@@ -63,13 +62,16 @@
           "title": {
             "sv": "Sammanfattning av projektresultat"
           },
-          "isRequired": true
+          "isRequired": true,
+          "placeHolder": {
+            "sv": "TEXT max 1500 tecken inkl blanksteg"
+          }
         },
         {
           "type": "html",
           "name": "next_description",
           "html": {
-            "sv": "<div><p><b>Vad planeras som nästa steg efter projektet?<b></p></div>\n<p><i>Viable Cities vill ha möjlighet att följa upp och om så är lämpligt kunna erbjuda städ eller hänvisa till annan part. Beskriv därför planerade kommande steg.</i></p>\n<p><i>TEXT max 1500 tecken inkl blanksteg</i></p>"
+            "sv": "<div><p><b>Vad planeras som nästa steg efter projektet?<b></p></div>\n<p><i>Viable Cities vill ha möjlighet att följa upp och om så är lämpligt kunna erbjuda städ eller hänvisa till annan part. Beskriv därför planerade kommande steg.</i></p>"
           }
         },
         {
@@ -78,7 +80,10 @@
           "title": {
             "sv": "Nästa steg"
           },
-          "isRequired": true
+          "isRequired": true,
+          "placeHolder": {
+            "sv": "TEXT max 1500 tecken inkl blanksteg"
+          }
         }
       ],
       "title": {
@@ -163,6 +168,5 @@
   },
   "completeText": {
     "sv": "Skicka in svaren"
-  },
-  "questionStartIndex": "1"
+  }
 }
