@@ -1,7 +1,7 @@
 {
   "locale": "sv",
   "title": {
-    "sv": "Enkätverkyg ViableCities Feedback"
+    "sv": "Test av enkätverktyget ViableCities Feedback"
   },
   "focusFirstQuestionAutomatic": false,
   "pages": [
@@ -34,6 +34,11 @@
             "sv": "Epost kontaktperson"
           },
           "isRequired": true,
+          "validators": [
+            {
+              "type": "email"
+            }
+          ],
           "inputType": "email",
           "placeHolder": {
             "sv": "Samma epost du loggat in med"
@@ -42,11 +47,21 @@
       ]
     },
     {
-      "name": "result",
+      "name": "results",
       "elements": [
         {
           "type": "rating",
-          "name": "question1"
+          "name": "summary",
+          "title": {
+            "sv": "Sammanfattning av projektresultat"
+          }
+        },
+        {
+          "type": "rating",
+          "name": "next_step",
+          "title": {
+            "sv": "Nästa steg"
+          }
         }
       ],
       "title": {
@@ -54,11 +69,21 @@
       }
     },
     {
-      "name": "publications",
+      "name": "publishing",
       "elements": [
         {
           "type": "rating",
-          "name": "question2"
+          "name": "publications",
+          "title": {
+            "sv": "Publikationer"
+          }
+        },
+        {
+          "type": "text",
+          "name": "web_and_social_media",
+          "title": {
+            "sv": "Webbplats och konton i sociala medier"
+          }
         }
       ],
       "title": {
@@ -66,11 +91,21 @@
       }
     },
     {
-      "name": "external",
+      "name": "publicity",
       "elements": [
         {
           "type": "rating",
-          "name": "question3"
+          "name": "references",
+          "title": {
+            "sv": "Artiklar i media / sociala medier"
+          }
+        },
+        {
+          "type": "rating",
+          "name": "conferences",
+          "title": {
+            "sv": "Medverkan i konferenser och dyl"
+          }
         }
       ],
       "title": {
@@ -82,7 +117,17 @@
       "elements": [
         {
           "type": "rating",
-          "name": "question4"
+          "name": "digital_platforms",
+          "title": {
+            "sv": "Digitala plattformar, metoder eller verktyg "
+          }
+        },
+        {
+          "type": "rating",
+          "name": "databases",
+          "title": {
+            "sv": "Databaser"
+          }
         }
       ],
       "title": {
@@ -90,7 +135,6 @@
       }
     }
   ],
-  "showQuestionNumbers": "onPage",
   "showProgressBar": "top",
   "checkErrorsMode": "onValueChanged",
   "pagePrevText": {
@@ -102,6 +146,5 @@
   "completeText": {
     "sv": "Skicka in svaren"
   },
-  "questionStartIndex": "1",
-  "showTimerPanelMode": "page"
+  "questionStartIndex": "1"
 }
