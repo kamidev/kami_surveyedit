@@ -87,7 +87,7 @@
         }
       ],
       "title": {
-        "sv": "Resultat av projektet\n"
+        "sv": "Resultat av projektet"
       }
     },
     {
@@ -95,11 +95,11 @@
       "elements": [
         {
           "type": "panel",
-          "name": "publications_panel",
+          "name": "publication_panel",
           "elements": [
             {
               "type": "radiogroup",
-              "name": "publications",
+              "name": "publication",
               "title": {
                 "sv": "Har projektet lett till publikationer från en eller flera av deltagande partners? Detta kan röra artiklar (vetenskapliga eller av annan typ), rapporter, filmer, bloggposter, podcasts eller liknande\n"
               },
@@ -118,21 +118,105 @@
                   }
                 }
               ]
+            },
+            {
+              "type": "matrixdynamic",
+              "name": "publications",
+              "visibleIf": "{publication} = true",
+              "title": "Publikationer",
+              "columns": [
+                {
+                  "name": "description",
+                  "title": "Beskrivning",
+                  "cellType": "text",
+                  "isRequired": true
+                },
+                {
+                  "name": "url",
+                  "title": "Webblänk",
+                  "cellType": "text",
+                  "isRequired": true
+                }
+              ],
+              "rowCount": 1
+            },
+            {
+              "type": "panel",
+              "name": "web_panel",
+              "elements": [
+                {
+                  "type": "radiogroup",
+                  "name": "website",
+                  "title": {
+                    "sv": "Har en webbplats skapats för projektet? Det kan även gälla en webbplats för en större satsning där projektet är en del."
+                  },
+                  "isRequired": true,
+                  "choices": [
+                    {
+                      "value": "true",
+                      "text": {
+                        "sv": "Ja"
+                      }
+                    },
+                    {
+                      "value": "false",
+                      "text": {
+                        "sv": "Nej"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "matrixdynamic",
+                  "name": "websites",
+                  "visibleIf": "{website} = true",
+                  "title": {
+                    "default": "Publiceringar",
+                    "sv": "Webbplatser"
+                  },
+                  "columns": [
+                    {
+                      "name": "description",
+                      "title": "Beskrivning",
+                      "cellType": "text",
+                      "isRequired": true
+                    },
+                    {
+                      "name": "url",
+                      "title": "Webblänk",
+                      "cellType": "text",
+                      "isRequired": true
+                    }
+                  ],
+                  "rowCount": 1
+                }
+              ],
+              "title": {
+                "sv": "Webbplats"
+              }
             }
           ],
           "title": {
-            "sv": "Publikationer"
+            "sv": "Egna publikationer"
           }
-        },
+        }
+      ],
+      "title": {
+        "sv": "Egna kommunikationsinsatser"
+      }
+    },
+    {
+      "name": "publicity",
+      "elements": [
         {
           "type": "panel",
-          "name": "web_panel",
+          "name": "socialmedia_panel",
           "elements": [
             {
               "type": "radiogroup",
-              "name": "question1",
+              "name": "external_publication",
               "title": {
-                "sv": "Har en webbplats skapats för projektet? Det kan också gälla en webbplats för en större satsning där projektet är en del.\nbloggposter, podcasts eller liknande\n"
+                "sv": "Har projektet lett till publicering i tidningar, facktidskrifter, inslag i radio eller tv eller liknande?"
               },
               "isRequired": true,
               "choices": [
@@ -149,32 +233,89 @@
                   }
                 }
               ]
+            },
+            {
+              "type": "matrixdynamic",
+              "name": "external_publications",
+              "visibleIf": "{external_publication} = true",
+              "title": {
+                "default": "Publikationer",
+                "sv": "Externa publikationer"
+              },
+              "columns": [
+                {
+                  "name": "description",
+                  "title": "Beskrivning",
+                  "cellType": "text",
+                  "isRequired": true
+                },
+                {
+                  "name": "url",
+                  "title": "Webblänk",
+                  "cellType": "text",
+                  "isRequired": true
+                }
+              ],
+              "rowCount": 1
+            },
+            {
+              "type": "panel",
+              "name": "conference_panel",
+              "elements": [
+                {
+                  "type": "radiogroup",
+                  "name": "external_event",
+                  "title": {
+                    "sv": "Har projektet presenterats på någon konferens, event, workshops? Frågan avser andra än de som organiserats internt med partners projektet."
+                  },
+                  "isRequired": true,
+                  "choices": [
+                    {
+                      "value": "true",
+                      "text": {
+                        "sv": "Ja"
+                      }
+                    },
+                    {
+                      "value": "false",
+                      "text": {
+                        "sv": "Nej"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "matrixdynamic",
+                  "name": "external_events",
+                  "visibleIf": "{external_event} = true",
+                  "title": {
+                    "default": "Publikationer",
+                    "sv": "Medverkan"
+                  },
+                  "columns": [
+                    {
+                      "name": "description",
+                      "title": "Beskrivning",
+                      "cellType": "text",
+                      "isRequired": true
+                    },
+                    {
+                      "name": "url",
+                      "title": "Webblänk",
+                      "cellType": "text",
+                      "isRequired": true
+                    }
+                  ],
+                  "rowCount": 1
+                }
+              ],
+              "title": {
+                "sv": "Medverkan i konferenser och dyl"
+              }
             }
           ],
           "title": {
-            "sv": "Webbplats och konton i sociala medier"
-          }
-        }
-      ],
-      "title": {
-        "sv": "Egna kommunikationsinsatser"
-      }
-    },
-    {
-      "name": "publicity",
-      "elements": [
-        {
-          "type": "rating",
-          "name": "references",
-          "title": {
-            "sv": "Artiklar i media / sociala medier"
-          }
-        },
-        {
-          "type": "rating",
-          "name": "conferences",
-          "title": {
-            "sv": "Medverkan i konferenser och dyl"
+            "sv": "Publicering i externa sammanhang\n\n"
           }
         }
       ],
@@ -186,17 +327,139 @@
       "name": "tools",
       "elements": [
         {
-          "type": "rating",
-          "name": "digital_platforms",
+          "type": "panel",
+          "name": "tools_panel",
+          "elements": [
+            {
+              "type": "radiogroup",
+              "name": "digital_tool",
+              "title": {
+                "sv": "Har digitala plattformar, metoder eller verktyg med koppling till projektet tagits fram?"
+              },
+              "isRequired": true,
+              "choices": [
+                {
+                  "value": "true",
+                  "text": {
+                    "sv": "Ja"
+                  }
+                },
+                {
+                  "value": "false",
+                  "text": {
+                    "sv": "Nej"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "matrixdynamic",
+              "name": "digital_tools",
+              "visibleIf": "{digital_tool} = true",
+              "title": {
+                "default": "Publikationer",
+                "sv": "Digitala plattformar, verktyg, metoder"
+              },
+              "columns": [
+                {
+                  "name": "name",
+                  "title": "Namn",
+                  "cellType": "text",
+                  "isRequired": true
+                },
+                {
+                  "name": "url",
+                  "title": "Webblänk",
+                  "cellType": "text",
+                  "isRequired": true
+                },
+                {
+                  "name": "description",
+                  "title": "Beskrivning",
+                  "cellType": "comment",
+                  "isRequired": true
+                },
+                {
+                  "name": "future",
+                  "title": "Framtid",
+                  "cellType": "comment",
+                  "isRequired": true
+                }
+              ],
+              "columnLayout": "vertical",
+              "rowCount": 1
+            },
+            {
+              "type": "panel",
+              "name": "database_panel",
+              "elements": [
+                {
+                  "type": "radiogroup",
+                  "name": "database",
+                  "title": {
+                    "sv": "Har databaser byggts upp för att samla data som genereras i projektet?\n"
+                  },
+                  "isRequired": true,
+                  "choices": [
+                    {
+                      "value": "true",
+                      "text": {
+                        "sv": "Ja"
+                      }
+                    },
+                    {
+                      "value": "false",
+                      "text": {
+                        "sv": "Nej"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "matrixdynamic",
+                  "name": "external_publications",
+                  "visibleIf": "{database} = true",
+                  "title": {
+                    "default": "Databases",
+                    "sv": "Databaser"
+                  },
+                  "columns": [
+                    {
+                      "name": "name",
+                      "title": "Namn",
+                      "cellType": "text",
+                      "isRequired": true
+                    },
+                    {
+                      "name": "url",
+                      "title": "Webblänk",
+                      "cellType": "text",
+                      "isRequired": true
+                    },
+                    {
+                      "name": "description",
+                      "title": "Beskrivning",
+                      "cellType": "comment",
+                      "isRequired": true
+                    },
+                    {
+                      "name": "future",
+                      "title": "Framtid",
+                      "cellType": "comment",
+                      "isRequired": true
+                    }
+                  ],
+                  "columnLayout": "vertical",
+                  "rowCount": 1
+                }
+              ],
+              "title": {
+                "sv": "Databaser"
+              }
+            }
+          ],
           "title": {
-            "sv": "Digitala plattformar, metoder eller verktyg "
-          }
-        },
-        {
-          "type": "rating",
-          "name": "databases",
-          "title": {
-            "sv": "Databaser"
+            "sv": "Verktyg, metoder och data"
           }
         }
       ],
@@ -206,6 +469,7 @@
     }
   ],
   "showPageTitles": false,
+  "showQuestionNumbers": "off",
   "showProgressBar": "top",
   "storeOthersAsComment": false,
   "checkErrorsMode": "onValueChanged",
