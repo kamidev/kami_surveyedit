@@ -65,7 +65,7 @@
           "isRequired": true,
           "maxLength": 1500,
           "placeHolder": {
-            "sv": "Max 1500 tecken inkl blanksteg"
+            "sv": "Max 1500 tecken inkl blanksteg. Försök vara begriplig för en bredare publik."
           }
         },
         {
