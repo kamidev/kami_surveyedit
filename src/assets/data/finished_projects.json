@@ -173,8 +173,8 @@
                   "name": "websites",
                   "visibleIf": "{website} = true",
                   "title": {
-                    "default": "Publiceringar",
-                    "sv": "Webbplatser"
+                    "sv": "Webbplatser",
+                    "default": "Publiceringar"
                   },
                   "columns": [
                     {
@@ -241,8 +241,8 @@
               "name": "external_publications",
               "visibleIf": "{external_publication} = true",
               "title": {
-                "default": "Publikationer",
-                "sv": "Externa publikationer"
+                "sv": "Externa publikationer",
+                "default": "Publikationer"
               },
               "columns": [
                 {
@@ -291,8 +291,8 @@
                   "name": "external_events",
                   "visibleIf": "{external_event} = true",
                   "title": {
-                    "default": "Publikationer",
-                    "sv": "Medverkan"
+                    "sv": "Medverkan",
+                    "default": "Publikationer"
                   },
                   "columns": [
                     {
@@ -359,8 +359,8 @@
               "name": "digital_tools",
               "visibleIf": "{digital_tool} = true",
               "title": {
-                "default": "Publikationer",
-                "sv": "Digitala plattformar, verktyg, metoder"
+                "sv": "Digitala plattformar, verktyg, metoder",
+                "default": "Publikationer"
               },
               "columns": [
                 {
@@ -420,10 +420,7 @@
                   "type": "matrixdynamic",
                   "name": "databases",
                   "visibleIf": "{database} = true",
-                  "title": {
-                    "default": "Databaser",
-                    "sv": "Databaser"
-                  },
+                  "title": "Databaser",
                   "columns": [
                     {
                       "name": "name",
