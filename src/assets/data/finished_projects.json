@@ -72,7 +72,7 @@
           "type": "html",
           "name": "next_step_after_project",
           "html": {
-            "sv": "<div><p><b>Vad planeras som nästa steg efter projektet?<b></p></div>\n<p><i>Viable Cities vill ha möjlighet att följa upp och om så är lämpligt kunna erbjuda städ eller hänvisa till annan part. Beskriv därför planerade kommande steg.</i></p>"
+            "sv": "<div><p><b>Vad planeras som nästa steg efter projektet?<b></p></div>\n<p><i>Viable Cities vill ha möjlighet att följa upp och om så är lämpligt kunna erbjuda stöd eller hänvisa till annan part. Beskriv därför planerade kommande steg.</i></p>"
           }
         },
         {
@@ -478,5 +478,8 @@
   },
   "completeText": {
     "sv": "Skicka in svaren"
+  },
+  "completedHTML": {
+    "sv": "Tack för att du fyllt i enkäten!"
   }
 }
