@@ -25,23 +25,6 @@
             "sv": "Ditt projekts diarienummer"
           },
           "isRequired": true
-        },
-        {
-          "type": "text",
-          "name": "project_email",
-          "title": {
-            "sv": "Epost kontaktperson"
-          },
-          "isRequired": true,
-          "validators": [
-            {
-              "type": "email"
-            }
-          ],
-          "inputType": "email",
-          "placeHolder": {
-            "sv": "Samma epost du loggat in med"
-          }
         }
       ]
     },
