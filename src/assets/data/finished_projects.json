@@ -388,7 +388,7 @@
                   "title": "Framtid",
                   "cellType": "comment",
                   "isRequired": true,
-                  "placeHolder": "Vad händer med det som tagits fram avslutat projekt? Max 1500 tecken inkl blanksteg."
+                  "placeHolder": "Vad händer med framtagna resultat efter avslutat projekt? Publiceras något som öppen källkod? Max 1500 tecken inkl blanksteg."
                 }
               ],
               "rowCount": 1
@@ -451,7 +451,7 @@
                       "cellType": "comment",
                       "isRequired": true,
                       "maxLength": 1500,
-                      "placeHolder": "Kommer insamlad data att göras tillgänglig efter avslutat projekt? Max 1500 tecken inkl blanksteg."
+                      "placeHolder": "Kommer insamlad data att göras tillgänglig efter avslutat projekt? Används licenser för Öppna Data? Max 1500 tecken inkl blanksteg."
                     }
                   ],
                   "rowCount": 1
