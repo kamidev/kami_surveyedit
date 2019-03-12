@@ -65,7 +65,7 @@
           "isRequired": true,
           "maxLength": 1500,
           "placeHolder": {
-            "sv": "Max 1500 tecken inkl blanksteg. Försök vara begriplig för en bredare publik."
+            "sv": "Max 1500 tecken inkl blanksteg. Skriv gärna med tanke på en bredare publik."
           }
         },
         {
@@ -360,7 +360,7 @@
               "visibleIf": "{digital_tool} = true",
               "title": {
                 "sv": "Digitala plattformar, verktyg, metoder",
-                "default": "Publikationer"
+                "default": "Digitala plattformar, verktyg, metoder"
               },
               "columns": [
                 {
@@ -379,13 +379,16 @@
                   "name": "description",
                   "title": "Beskrivning",
                   "cellType": "comment",
-                  "isRequired": true
+                  "isRequired": true,
+                  "maxLength": 1500,
+                  "placeHolder": "Skriv gärna med tanke på en bredare publik. Max 1500 tecken inkl blanksteg."
                 },
                 {
                   "name": "future",
                   "title": "Framtid",
                   "cellType": "comment",
-                  "isRequired": true
+                  "isRequired": true,
+                  "placeHolder": "Vad händer med det som tagits fram avslutat projekt? Max 1500 tecken inkl blanksteg."
                 }
               ],
               "rowCount": 1
@@ -398,7 +401,7 @@
                   "type": "radiogroup",
                   "name": "database",
                   "title": {
-                    "sv": "Har databaser byggts upp för att samla data som genereras i projektet?\n"
+                    "sv": "Har databaser byggts upp för att samla data som genereras i projektet?"
                   },
                   "isRequired": true,
                   "choices": [
@@ -438,13 +441,17 @@
                       "name": "description",
                       "title": "Beskrivning",
                       "cellType": "comment",
-                      "isRequired": true
+                      "isRequired": true,
+                      "maxLength": 1500,
+                      "placeHolder": "Beskriv databasens syfte och huvudsakliga innehåll. Max 1500 tecken inkl blanksteg."
                     },
                     {
                       "name": "future",
                       "title": "Framtid",
                       "cellType": "comment",
-                      "isRequired": true
+                      "isRequired": true,
+                      "maxLength": 1500,
+                      "placeHolder": "Kommer insamlad data att göras tillgänglig efter avslutat projekt? Max 1500 tecken inkl blanksteg."
                     }
                   ],
                   "rowCount": 1
