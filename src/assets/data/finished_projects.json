@@ -3,6 +3,7 @@
   "title": {
     "sv": "Test av enkätverktyget ViableCities Feedback"
   },
+  "completedHtml": "<p><h4>Tack för att du ville besvara enkäten!</p>",
   "pages": [
     {
       "name": "intro",
@@ -341,10 +342,7 @@
               "type": "matrixdynamic",
               "name": "digital_tools",
               "visibleIf": "{digital_tool} = true",
-              "title": {
-                "sv": "Digitala plattformar, verktyg, metoder",
-                "default": "Digitala plattformar, verktyg, metoder"
-              },
+              "title": "Digitala plattformar, verktyg, metoder",
               "columns": [
                 {
                   "name": "name",
@@ -363,8 +361,8 @@
                   "title": "Beskrivning",
                   "cellType": "comment",
                   "isRequired": true,
-                  "maxLength": 1500,
-                  "placeHolder": "Skriv gärna med tanke på en bredare publik. Max 1500 tecken inkl blanksteg."
+                  "placeHolder": "Skriv gärna med tanke på en bredare publik. Max 1500 tecken inkl blanksteg.",
+                  "maxLength": 1500
                 },
                 {
                   "name": "future",
@@ -425,16 +423,16 @@
                       "title": "Beskrivning",
                       "cellType": "comment",
                       "isRequired": true,
-                      "maxLength": 1500,
-                      "placeHolder": "Beskriv databasens syfte och huvudsakliga innehåll. Max 1500 tecken inkl blanksteg."
+                      "placeHolder": "Beskriv databasens syfte och huvudsakliga innehåll. Max 1500 tecken inkl blanksteg.",
+                      "maxLength": 1500
                     },
                     {
                       "name": "future",
                       "title": "Framtid",
                       "cellType": "comment",
                       "isRequired": true,
-                      "maxLength": 1500,
-                      "placeHolder": "Kommer insamlad data att göras tillgänglig efter avslutat projekt? Används licenser för Öppna Data? Max 1500 tecken inkl blanksteg."
+                      "placeHolder": "Kommer insamlad data att göras tillgänglig efter avslutat projekt? Används licenser för Öppna Data? Max 1500 tecken inkl blanksteg.",
+                      "maxLength": 1500
                     }
                   ],
                   "rowCount": 1
@@ -468,8 +466,5 @@
   },
   "completeText": {
     "sv": "Skicka in svaren"
-  },
-  "completedHTML": {
-    "sv": "Tack för att du fyllt i enkäten!"
   }
 }
