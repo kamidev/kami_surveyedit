@@ -1,217 +1,341 @@
 {
+  "locale": "sv",
+  "title": "Projektuppgifter",
   "pages": [
     {
       "name": "administrative",
-      "title": { "sv": "Administrativt" },
       "elements": [
         {
-          "name": "followup_period",
           "type": "text",
-          "title": { "sv": "Uppföljningsperiod" },
-          "defaultValue": "Oktober 2018"
+          "name": "project_title",
+          "title": {
+            "sv": "Projektnamn"
+          },
+          "isRequired": true
         },
         {
+          "type": "text",
           "name": "project_id",
-          "type": "text",
-          "title": { "sv": "Projekt-ID" },
+          "title": {
+            "sv": "Diarienummer"
+          },
           "isRequired": true
         },
         {
-          "name": "pm_name",
-          "type": "text",
-          "title": { "sv": "Namn projektledare" },
-          "isRequired": true
-        },
-        {
-          "name": "pm_email",
-          "type": "text",
-          "title": { "sv": "E-post projektledare" },
-          "inputType": "email",
+          "type": "comment",
+          "name": "project_description",
+          "title": {
+            "sv": "Beskrivning"
+          },
           "isRequired": true,
-          "placeHolder": { "sv": "namn@webbsajt.se" }
+          "maxLength": 600,
+          "rows": 2,
+          "placeHolder": {
+            "sv": "Max 600 tecken inkl blanksteg. Skriv gärna med tanke på en bredare publik."
+          }
+        },
+        {
+          "type": "text",
+          "name": "project_link",
+          "title": {
+            "sv": "Webbplats"
+          },
+          "isRequired": true,
+          "inputType": "url"
         }
-      ]
+      ],
+      "title": {
+        "sv": "Administrativt"
+      }
     },
     {
       "name": "project_info",
-      "title": { "sv": "Projektinformation\n" },
       "elements": [
         {
-          "name": "project_title",
           "type": "text",
-          "title": { "sv": "Projektnamn" },
-          "isRequired": true
-        },
-        {
           "name": "project_organization",
-          "type": "text",
-          "title": { "sv": "Organisation" },
+          "title": {
+            "sv": "Organisation"
+          },
           "isRequired": true
         },
         {
-          "name": "project_type",
           "type": "dropdown",
-          "title": { "sv": "Projekttyp" },
+          "name": "project_type",
+          "title": {
+            "sv": "Projekttyp"
+          },
+          "isRequired": true,
           "choices": [
-            { "text": { "sv": "Förstudie" }, "value": "study" },
-            { "text": { "sv": "Forskningsprojekt" }, "value": "research" },
-            { "text": { "sv": "Innovationsprojekt" }, "value": "innovation" },
-            { "text": { "sv": "Demonstrationsprojekt" }, "value": "demo" }
-          ],
-          "isRequired": true
+            {
+              "value": "study",
+              "text": {
+                "sv": "Förstudie"
+              }
+            },
+            {
+              "value": "research",
+              "text": {
+                "sv": "Forskningsprojekt"
+              }
+            },
+            {
+              "value": "innovation",
+              "text": {
+                "sv": "Innovationsprojekt"
+              }
+            },
+            {
+              "value": "demo",
+              "text": {
+                "sv": "Demonstrationsprojekt"
+              }
+            }
+          ]
         },
         {
-          "name": "keywords",
+          "type": "text",
+          "name": "project_start",
+          "title": {
+            "sv": "Projektstart"
+          },
+          "inputType": "datetime-local"
+        },
+        {
+          "type": "text",
+          "name": "project_end",
+          "title": {
+            "sv": "Projektslut"
+          },
+          "inputType": "datetime-local"
+        },
+        {
           "type": "comment",
-          "title": { "sv": "Nyckelord" }
+          "name": "keywords",
+          "title": {
+            "sv": "Nyckelord"
+          }
         }
-      ]
+      ],
+      "title": {
+        "sv": "Projektinformation"
+      }
     },
     {
       "name": "funding",
-      "title": { "sv": "Finansiering" },
       "elements": [
         {
-          "name": "budget",
           "type": "multipletext",
+          "name": "budget",
+          "startWithNewLine": false,
+          "title": {
+            "sv": "Budget"
+          },
+          "isRequired": true,
           "items": [
-            { "name": "funded", "title": "Sökt stöd", "inputType": "number" },
+            {
+              "name": "funded",
+              "inputType": "number",
+              "title": "Sökt stöd"
+            },
             {
               "name": "total_cost",
-              "title": { "sv": "Totalkostnad" },
-              "inputType": "number"
+              "inputType": "number",
+              "title": {
+                "sv": "Totalkostnad"
+              }
             }
-          ],
-          "title": { "sv": "Budget" },
-          "isRequired": true,
-          "startWithNewLine": false
+          ]
         },
         {
-          "name": "ratio_funded",
           "type": "expression",
+          "name": "ratio_funded",
+          "startWithNewLine": false,
           "title": "Andel sökt stöd:",
           "expression": "{budget.funded} / {budget.total_cost}",
-          "displayStyle": "percent",
-          "startWithNewLine": false
+          "displayStyle": "percent"
         },
         {
+          "type": "comment",
           "name": "other_financiers",
-          "type": "comment",
-          "title": { "sv": "Övriga finansiärer" }
+          "title": {
+            "sv": "Övriga finansiärer"
+          }
         },
         {
-          "name": "other_recipients",
           "type": "comment",
-          "title": { "sv": "Övriga mottagare" }
+          "name": "other_recipients",
+          "title": {
+            "sv": "Övriga mottagare"
+          }
         }
-      ]
+      ],
+      "title": {
+        "sv": "Finansiering"
+      }
     },
     {
       "name": "theme_focus_matrix",
       "elements": [
         {
+          "type": "checkbox",
           "name": "focus_lifestyle",
-          "type": "checkbox",
-          "title": { "sv": "Teman inom livstil & konsumtion" },
+          "title": {
+            "sv": "Teman inom livstil & konsumtion"
+          },
           "choices": [
             {
-              "text": { "sv": "Testbäddar, Living Labs" },
-              "value": "testbeds"
+              "value": "testbeds",
+              "text": {
+                "sv": "Testbäddar, Living Labs"
+              }
             },
             {
-              "text": { "sv": "Innovation, entrepenörskap" },
-              "value": "innovation"
+              "value": "innovation",
+              "text": {
+                "sv": "Innovation, entrepenörskap"
+              }
             },
             {
-              "text": { "sv": "Finansiering, affärsmodeller" },
-              "value": "financing"
+              "value": "financing",
+              "text": {
+                "sv": "Finansiering, affärsmodeller"
+              }
             },
-            { "text": { "sv": "Styrning" }, "value": "management" },
             {
-              "text": { "sv": "Intelligens, cybersäkerhet, etik" },
-              "value": "intelligence"
+              "value": "management",
+              "text": {
+                "sv": "Styrning"
+              }
+            },
+            {
+              "value": "intelligence",
+              "text": {
+                "sv": "Intelligens, cybersäkerhet, etik"
+              }
             }
           ]
         },
         {
+          "type": "checkbox",
           "name": "focus_planning",
-          "type": "checkbox",
-          "title": { "sv": "Teman inom planering & byggd miljö" },
+          "title": {
+            "sv": "Teman inom planering & byggd miljö"
+          },
           "choices": [
             {
-              "text": { "sv": "Testbäddar, Living Labs" },
-              "value": "testbeds"
+              "value": "testbeds",
+              "text": {
+                "sv": "Testbäddar, Living Labs"
+              }
             },
             {
-              "text": { "sv": "Innovation, entrepenörskap" },
-              "value": "innovation"
+              "value": "innovation",
+              "text": {
+                "sv": "Innovation, entrepenörskap"
+              }
             },
             {
-              "text": { "sv": "Finansiering, affärsmodeller" },
-              "value": "financing"
+              "value": "financing",
+              "text": {
+                "sv": "Finansiering, affärsmodeller"
+              }
             },
-            { "text": { "sv": "Styrning" }, "value": "management" },
             {
-              "text": { "sv": "Intelligens, cybersäkerhet, etik" },
-              "value": "intelligence"
+              "value": "management",
+              "text": {
+                "sv": "Styrning"
+              }
+            },
+            {
+              "value": "intelligence",
+              "text": {
+                "sv": "Intelligens, cybersäkerhet, etik"
+              }
             }
           ]
         },
         {
+          "type": "checkbox",
           "name": "focus_mobility",
-          "type": "checkbox",
-          "title": { "sv": "Teman inom mobilitet & tillgänglighet" },
+          "title": {
+            "sv": "Teman inom mobilitet & tillgänglighet"
+          },
           "choices": [
             {
-              "text": { "sv": "Testbäddar, Living Labs" },
-              "value": "testbeds"
+              "value": "testbeds",
+              "text": {
+                "sv": "Testbäddar, Living Labs"
+              }
             },
             {
-              "text": { "sv": "Innovation, entrepenörskap" },
-              "value": "innovation"
+              "value": "innovation",
+              "text": {
+                "sv": "Innovation, entrepenörskap"
+              }
             },
             {
-              "text": { "sv": "Finansiering, affärsmodeller" },
-              "value": "financing"
+              "value": "financing",
+              "text": {
+                "sv": "Finansiering, affärsmodeller"
+              }
             },
-            { "text": { "sv": "Styrning" }, "value": "management" },
             {
-              "text": { "sv": "Intelligens, cybersäkerhet, etik" },
-              "value": "intelligence"
+              "value": "management",
+              "text": {
+                "sv": "Styrning"
+              }
+            },
+            {
+              "value": "intelligence",
+              "text": {
+                "sv": "Intelligens, cybersäkerhet, etik"
+              }
             }
           ]
         },
         {
-          "name": "focus_infrastructure",
           "type": "checkbox",
-          "title": { "sv": "Teman inom integrerad infrastruktur" },
+          "name": "focus_infrastructure",
+          "title": {
+            "sv": "Teman inom integrerad infrastruktur"
+          },
           "choices": [
             {
-              "text": { "sv": "Testbäddar, Living Labs" },
-              "value": "testbeds"
+              "value": "testbeds",
+              "text": {
+                "sv": "Testbäddar, Living Labs"
+              }
             },
             {
-              "text": { "sv": "Innovation, entrepenörskap" },
-              "value": "innovation"
+              "value": "innovation",
+              "text": {
+                "sv": "Innovation, entrepenörskap"
+              }
             },
             {
-              "text": { "sv": "Finansiering, affärsmodeller" },
-              "value": "financing"
+              "value": "financing",
+              "text": {
+                "sv": "Finansiering, affärsmodeller"
+              }
             },
-            { "text": { "sv": "Styrning" }, "value": "management" },
             {
-              "text": { "sv": "Intelligens, cybersäkerhet, etik" },
-              "value": "intelligence"
+              "value": "management",
+              "text": {
+                "sv": "Styrning"
+              }
+            },
+            {
+              "value": "intelligence",
+              "text": {
+                "sv": "Intelligens, cybersäkerhet, etik"
+              }
             }
           ]
         }
       ]
     }
   ],
-  "title": {
-    "sv": "Projektuppföljning",
-    "default": "Projektuppföljning 12/10 2018"
-  },
-  "locale": "sv",
-  "showProgressBar": "top"
+  "showProgressBar": "top",
+  "checkErrorsMode": "onValueChanged"
 }
