@@ -99,7 +99,7 @@
           "title": {
             "sv": "Projektstart"
           },
-          "inputType": "datetime-local"
+          "placeHolder": "YY-MM-DD"
         },
         {
           "type": "text",
@@ -107,7 +107,7 @@
           "title": {
             "sv": "Projektslut"
           },
-          "inputType": "datetime-local"
+          "placeHolder": "YY-MM-DD"
         },
         {
           "type": "comment",
