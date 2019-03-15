@@ -37,7 +37,7 @@
           "name": "result_description",
           "startWithNewLine": false,
           "html": {
-            "sv": "<div><p><b>Vilka är de viktigaste resultaten från projektet?<b></p></div>\n<i>Viable Cities kommer att publicera en kort sammanfattning av de viktigaste resultaten från respektive projekt. Därför behöver vi en text som beskriver detta.</i>\n"
+            "sv": "<div><p><b>Vilka är de viktigaste resultaten från projektet?<b></p></div>\n<i>Viable Cities kommer att publicera en kort sammanfattning av de viktigaste resultaten från respektive projekt. Skriv en kort text om de viktigaste resultaten. Precisera gärna på vilket sätt resultatet kan bidra till omställning till klimatneutrala städer. Denna text kan komma att redigeras något innan publicering.</i>\n"
           }
         },
         {
@@ -112,16 +112,15 @@
               "title": "Publikationer",
               "columns": [
                 {
-                  "name": "description",
-                  "title": "Beskrivning",
+                  "name": "name",
+                  "title": "Namn",
                   "cellType": "text",
                   "isRequired": true
                 },
                 {
-                  "name": "url",
-                  "title": "Webblänk",
-                  "cellType": "text",
-                  "isRequired": true
+                  "name": "description",
+                  "title": "Beskrivning eller webblänk",
+                  "cellType": "text"
                 }
               ],
               "rowCount": 1
@@ -158,7 +157,7 @@
                   "visibleIf": "{website} = true",
                   "title": {
                     "sv": "Webbplatser",
-                    "default": "Publiceringar"
+                    "default": "Webbplatser"
                   },
                   "columns": [
                     {
@@ -230,14 +229,14 @@
               },
               "columns": [
                 {
-                  "name": "description",
-                  "title": "Beskrivning",
+                  "name": "name",
+                  "title": "Namn",
                   "cellType": "text",
                   "isRequired": true
                 },
                 {
-                  "name": "url",
-                  "title": "Webblänk",
+                  "name": "description",
+                  "title": "Beskrivning eller webblänk",
                   "cellType": "text",
                   "isRequired": true
                 }
@@ -280,16 +279,15 @@
                   },
                   "columns": [
                     {
-                      "name": "description",
-                      "title": "Beskrivning",
+                      "name": "name",
+                      "title": "Namn",
                       "cellType": "text",
                       "isRequired": true
                     },
                     {
-                      "name": "url",
-                      "title": "Webblänk",
-                      "cellType": "text",
-                      "isRequired": true
+                      "name": "description",
+                      "title": "Beskrivning eller webblänk",
+                      "cellType": "text"
                     }
                   ],
                   "rowCount": 1
