@@ -22,26 +22,27 @@
           "isRequired": true
         },
         {
-          "type": "comment",
-          "name": "project_description",
+          "type": "multipletext",
+          "name": "dates",
           "title": {
-            "sv": "Beskrivning"
+            "sv": "Projekttid"
           },
-          "isRequired": true,
-          "maxLength": 600,
-          "rows": 2,
-          "placeHolder": {
-            "sv": "Max 600 tecken inkl blanksteg. Skriv gärna med tanke på en bredare publik."
-          }
-        },
-        {
-          "type": "text",
-          "name": "project_link",
-          "title": {
-            "sv": "Webbplats"
-          },
-          "isRequired": true,
-          "inputType": "url"
+          "items": [
+            {
+              "name": "start",
+              "isRequired": true,
+              "title": {
+                "sv": "Start"
+              }
+            },
+            {
+              "name": "end",
+              "isRequired": true,
+              "title": {
+                "sv": "Slut"
+              }
+            }
+          ]
         }
       ],
       "title": {
@@ -51,14 +52,6 @@
     {
       "name": "project_info",
       "elements": [
-        {
-          "type": "text",
-          "name": "project_organization",
-          "title": {
-            "sv": "Organisation"
-          },
-          "isRequired": true
-        },
         {
           "type": "dropdown",
           "name": "project_type",
@@ -94,20 +87,26 @@
           ]
         },
         {
-          "type": "text",
-          "name": "project_start",
+          "type": "comment",
+          "name": "description",
           "title": {
-            "sv": "Projektstart"
+            "sv": "Beskrivning"
           },
-          "placeHolder": "YY-MM-DD"
+          "isRequired": true,
+          "maxLength": 600,
+          "rows": 2,
+          "placeHolder": {
+            "sv": "Max 600 tecken inkl blanksteg. Skriv gärna med tanke på en bredare publik."
+          }
         },
         {
           "type": "text",
-          "name": "project_end",
+          "name": "link",
           "title": {
-            "sv": "Projektslut"
+            "sv": "Projektets webbplats"
           },
-          "placeHolder": "YY-MM-DD"
+          "isRequired": true,
+          "inputType": "url"
         },
         {
           "type": "comment",
