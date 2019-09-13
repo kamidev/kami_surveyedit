@@ -17,7 +17,7 @@
     "popper.js": "^1.15.0",
     "survey-creator": "^1.1.11",
     "survey-vue": "^1.1.11",
-    "surveyjs-widgets": "^1.0.93",
+    "surveyjs-widgets": "^1.1.1",
     "vue": "^2.6.10",
     "vue-axios": "^2.1.4"
   },
