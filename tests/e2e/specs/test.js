@@ -6,8 +6,8 @@ module.exports = {
     browser
       .url(process.env.VUE_DEV_SERVER_URL)
       .waitForElementVisible('#app', 8080)
-      /*.assert.elementPresent("survey")
-             .assert.containsText("h1", "Welcome to Your Vue.js App")
+      .assert.elementPresent('#surveyEditorContainer')
+      /*       .assert.containsText("h1", "Welcome to Your Vue.js App")
       .assert.elementCount("img", 1) */
       .end()
   }
