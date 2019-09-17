@@ -1,6 +1,6 @@
 {
   "name": "kami_surveyedit",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -17,7 +17,7 @@
     "bootstrap": "^4.3.1",
     "popper.js": "^1.15.0",
     "survey-creator": "^1.1.11",
-    "survey-vue": "^1.1.11",
+    "survey-vue": "^1.1.12",
     "surveyjs-widgets": "^1.1.1",
     "vue": "^2.6.10",
     "vue-axios": "^2.1.4"
@@ -32,7 +32,7 @@
     "@vue/test-utils": "^1.0.0-beta.29",
     "babel-jest": "^24.9.0",
     "chromedriver": "^76.0.1",
-    "geckodriver": "^1.16.2",
+    "geckodriver": "^1.17.0",
     "vue-template-compiler": "^2.6.10"
   },
   "eslintConfig": {
