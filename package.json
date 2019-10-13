@@ -31,7 +31,7 @@
     "@vue/cli-plugin-babel": "^4.0.0-rc.8",
     "@vue/cli-plugin-eslint": "^4.0.0-rc.8",
     "@vue/cli-plugin-e2e-nightwatch": "^4.0.0-rc.8",
-    "@vue/cli-plugin-unit-jest": "^3.11.0",
+    "@vue/cli-plugin-unit-jest": "^4.0.0-rc.8",
     "@vue/test-utils": "^1.0.0-beta.29",
     "babel-jest": "^24.9.0",
     "babel-eslint": "^10.0.3",
@@ -68,28 +68,6 @@
     "not ie <= 8"
   ],
   "jest": {
-    "moduleFileExtensions": [
-      "js",
-      "jsx",
-      "json",
-      "vue"
-    ],
-    "transform": {
-      "^.+\\.vue$": "vue-jest",
-      ".+\\.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2)$": "jest-transform-stub"
-    },
-    "transformIgnorePatterns": [
-      "node_modules/(?!jest-test)"
-    ],
-    "moduleNameMapper": {
-      "^@/(.*)$": "<rootDir>/src/$1"
-    },
-    "snapshotSerializers": [
-      "jest-serializer-vue"
-    ],
-    "testMatch": [
-      "<rootDir>/(tests/unit/**/*.spec.(js|jsx)|**/__tests__/*.(js|jsx))"
-    ],
-    "testURL": "http://localhost/"
+    "preset": "@vue/cli-plugin-unit-jest"
   }
 }
