@@ -19,14 +19,10 @@ Vue.use(VueAxios, axios)
 var Survey = SurveyVue.Survey
 Survey.cssType = 'bootstrap'
 
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
   name: 'app',
   components: {
-    Survey,
-    SurveyEditor,
-    HelloWorld
+    SurveyEditor
   },
   data() {
     var json = { title: 'Waiting for project info..' }
