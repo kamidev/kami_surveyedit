@@ -11,7 +11,7 @@
     "test:e2e": "vue-cli-service test:e2e"
   },
   "dependencies": {
-    "@babel/core": "^7.6.0",
+    "@babel/core": "^7.6.4",
     "ace-builds": "^1.4.6",
     "axios": "^0.19.0",
     "bootstrap": "^4.3.1",
@@ -20,19 +20,19 @@
     "survey-vue": "^1.1.12",
     "surveyjs-widgets": "^1.1.1",
     "vue": "^2.6.10",
-    "vue-axios": "^2.1.4"
+    "vue-axios": "^2.1.5"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.0.0-rc.3",
-    "@vue/cli-plugin-e2e-nightwatch": "^4.0.0-rc.3",
+    "@vue/cli-plugin-e2e-nightwatch": "^4.0.0-rc.8",
     "@vue/cli-plugin-eslint": "^3.11.0",
     "@vue/cli-plugin-unit-jest": "^3.11.0",
-    "@vue/cli-service": "^4.0.0-rc.3",
+    "@vue/cli-service": "^4.0.0-rc.8",
     "@vue/eslint-config-prettier": "^4.0.1",
     "@vue/test-utils": "^1.0.0-beta.29",
     "babel-jest": "^24.9.0",
-    "chromedriver": "^76.0.1",
-    "geckodriver": "^1.17.0",
+    "chromedriver": "^77.0.0",
+    "geckodriver": "^1.18.0",
     "vue-template-compiler": "^2.6.10"
   },
   "eslintConfig": {
