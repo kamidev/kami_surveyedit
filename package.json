@@ -5,10 +5,10 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "test": "vue-cli-service lint && vue-cli-service test:unit && vue-cli-service test:e2e",
     "test:unit": "vue-cli-service test:unit",
-    "test:e2e": "vue-cli-service test:e2e"
+    "test:e2e": "vue-cli-service test:e2e",
+    "lint": "vue-cli-service lint",
+    "test": "vue-cli-service lint && vue-cli-service test:unit && vue-cli-service test:e2e"
   },
   "dependencies": {
     "@babel/core": "^7.6.4",
@@ -23,7 +23,7 @@
     "vue-axios": "^2.1.5"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^4.0.0-rc.3",
+    "@vue/cli-plugin-babel": "^4.0.0-rc.8",
     "@vue/cli-plugin-e2e-nightwatch": "^4.0.0-rc.8",
     "@vue/cli-plugin-eslint": "^3.11.0",
     "@vue/cli-plugin-unit-jest": "^3.11.0",
