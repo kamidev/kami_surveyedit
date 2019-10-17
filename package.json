@@ -12,8 +12,8 @@
   },
   "dependencies": {
     "@babel/core": "^7.6.4",
-    "@vue/cli": "^4.0.0-rc.8",
-    "@vue/cli-service": "^4.0.0-rc.8",
+    "@vue/cli": "^4.0.3",
+    "@vue/cli-service": "^4.0.3",
     "ace-builds": "^1.4.6",
     "axios": "^0.19.0",
     "bootstrap": "^4.3.1",
@@ -28,10 +28,10 @@
     "vue-axios": "^2.1.5"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^4.0.0-rc.8",
-    "@vue/cli-plugin-eslint": "^4.0.0-rc.8",
-    "@vue/cli-plugin-e2e-nightwatch": "^4.0.0-rc.8",
-    "@vue/cli-plugin-unit-jest": "^4.0.0-rc.8",
+    "@vue/cli-plugin-babel": "^4.0.3",
+    "@vue/cli-plugin-eslint": "^4.0.3",
+    "@vue/cli-plugin-e2e-nightwatch": "^4.0.3",
+    "@vue/cli-plugin-unit-jest": "^4.0.3",
     "@vue/test-utils": "^1.0.0-beta.29",
     "babel-jest": "^24.9.0",
     "babel-eslint": "^10.0.3",
