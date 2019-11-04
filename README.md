@@ -1,31 +1,47 @@
-# h2
+# Kami_surveyedit
+
+Sample application embedding a simple [SurveyJS](https://surveyjs.io/Overview/Library/) editor. For personal use only.
+
+Note! Commercial applications using this editor functionality should get a [license](https://surveyjs.io/Home/Licenses).
 
 ## Project setup
+
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Compile and hot-reload for development
+
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Compile and minify for production
+
 ```
 npm run build
 ```
 
-### Lints and fixes files
+### Lint and fix files
+
 ```
 npm run lint
 ```
 
-### Run your unit tests
+### Run all tests
+
+```
+npm test
+```
+
+### Run only unit tests
+
 ```
 npm run test:unit
 ```
 
-### Run your end-to-end tests
+### Run only end-to-end tests
+
 ```
 npm run test:e2e
 ```
