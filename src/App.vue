@@ -57,17 +57,10 @@ export default {
               survey_id: survey_id,
               survey_answers: result.data,
               pseudonym: pseudonym,
-              user_id: 0 // TODO: add real user data here
+              user_id: 0 // TODO: get rid of this!
             }
           };
           axios.post("https://localhost:4001/api/answers", input).then(
-            /*             axios
-              .post(
-                "https://sharingcities.evothings.com/survey_api/answers",
-                input
-              )
-              .then( */
-            // eslint-disable-next-line
             result => {
               this.response = answers;
             },
