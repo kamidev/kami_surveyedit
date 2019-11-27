@@ -60,8 +60,8 @@ export default {
               user_id: 0 // TODO: get rid of this!
             }
           };
-          // eslint-disable-no_unused_variables
           axios.post("https://localhost:4001/api/answers", input).then(
+            // eslint-disable-next-line
             result => {
               this.response = answers;
             },

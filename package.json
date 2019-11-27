@@ -1,6 +1,6 @@
 {
   "name": "kami_surveyedit",
-  "version": "1.5.3",
+  "version": "1.5.4",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -11,16 +11,16 @@
     "test": "vue-cli-service lint && vue-cli-service test:unit && vue-cli-service test:e2e"
   },
   "dependencies": {
-    "@babel/core": "^7.7.2",
-    "@vue/cli": "^4.0.5",
-    "@vue/cli-service": "^4.0.5",
+    "@babel/core": "^7.7.4",
+    "@vue/cli": "^4.1.1",
+    "@vue/cli-service": "^4.1.1",
     "ace-builds": "^1.4.7",
     "axios": "^0.19.0",
-    "bootstrap": "^4.3.1",
+    "bootstrap": "^4.4.0",
     "@vue/eslint-config-prettier": "^5.0.0",
     "eslint-plugin-prettier": "^3.1.1",
     "popper.js": "^1.16.0",
-    "prettier": "^1.18.2",
+    "prettier": "^1.19.1",
     "survey-creator": "^1.1.19",
     "survey-vue": "^1.1.19",
     "surveyjs-widgets": "^1.1.1",
@@ -28,10 +28,10 @@
     "vue-axios": "^2.1.5"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^4.0.5",
-    "@vue/cli-plugin-e2e-nightwatch": "^4.0.5",
-    "@vue/cli-plugin-eslint": "^4.0.5",
-    "@vue/cli-plugin-unit-jest": "^4.0.5",
+    "@vue/cli-plugin-babel": "^4.1.1",
+    "@vue/cli-plugin-e2e-nightwatch": "^4.1.1",
+    "@vue/cli-plugin-eslint": "^4.1.1",
+    "@vue/cli-plugin-unit-jest": "^4.1.1",
     "@vue/test-utils": "^1.0.0-beta.29",
     "babel-eslint": "^10.0.3",
     "babel-jest": "^24.9.0",
