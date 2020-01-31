@@ -1,6 +1,6 @@
 {
   "name": "kami_surveyedit",
-  "version": "1.7.0",
+  "version": "1.7.1",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -36,8 +36,8 @@
     "babel-eslint": "^10.0.3",
     "babel-jest": "^25.1.0",
     "chromedriver": "^79.0.2",
-    "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^6.0.1",
+    "eslint": "^6.8.0",
+    "eslint-plugin-vue": "^6.1.2",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
